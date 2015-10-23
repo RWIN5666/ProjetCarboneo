@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="Selecteur" fillWidth="false" styleClass="background-bright" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carb.view.SelectorController">
+<children><Button mnemonicParsing="false" onAction="#handleGeneral" prefHeight="50.0" prefWidth="100.0" text="General" /><Button mnemonicParsing="false" onAction="#handleTrajet" prefHeight="50.0" prefWidth="100.0" text="Trajet" /><Button mnemonicParsing="false" onAction="#handleProfil" prefHeight="50.0" prefWidth="100.0" text="Profils" /><Button mnemonicParsing="false" onAction="#handleBilan" prefHeight="50.0" prefWidth="100.0" text="Bilan" />
+</children>
+</VBox>

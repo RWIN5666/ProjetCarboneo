@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="border" cacheShape="false" centerShape="false" prefHeight="700.0" prefWidth="1000.0" scaleShape="false" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carb.view.TrajetOverviewController">
+<top><ToolBar prefWidth="200.0" BorderPane.alignment="CENTER">
+  <items><ToggleButton fx:id="bouton_hybride" layoutX="385.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeToHybrid" prefHeight="30.0" prefWidth="66.0" stylesheets="@CARTE.css" text="Hybride" /><ToggleButton fx:id="bouton_satellite" layoutX="314.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeToSatellite" prefHeight="29.0" prefWidth="71.0" stylesheets="@CARTE.css" text="Satellite" /><ToggleButton fx:id="bouton_route" layoutX="243.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeToRoute" prefHeight="29.0" prefWidth="71.0" stylesheets="@CARTE.css" text="Route" /><TextField fx:id="searchDepart" layoutX="39.0" layoutY="14.0" prefHeight="33.0" prefWidth="161.0" promptText="Entrez votre lieu de départ" stylesheets="@CARTE.css" /><TextField fx:id="searchArrivee" promptText="Entrez le lieu d'arrivée" /><Button fx:id="boutonValiderDepart" layoutX="94.0" layoutY="49.0" mnemonicParsing="false" onAction="#validerDepart" text="Valider" />
+  </items>
+</ToolBar>
+</top>
+<bottom><Pane centerShape="false" minHeight="50.0" scaleShape="false" styleClass="background-bright" BorderPane.alignment="CENTER">
+<children><Label fx:id="label" layoutX="312.0" layoutY="74.0" text="Attente du calcul..." BorderPane.alignment="CENTER" />
+    <Button fx:id="boutonExit" centerShape="false" layoutX="8.0" layoutY="-17.0" mnemonicParsing="false" onAction="#quitterProgramme" scaleShape="false" text="Quitter Le Programme Mothefucker" translateY="85.0" /><Label fx:id="label3" centerShape="false" layoutX="44.0" layoutY="-20.0" scaleShape="false" text="Attente des Coordonnées..." translateY="50.0" /><Label fx:id="consoAffiche" layoutX="539.0" layoutY="20.0" text="Attente Calcul Consommation..." /><ImageView fx:id="imageLogo" fitHeight="50.0" fitWidth="100.0" layoutX="886.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
+</children></Pane>
+</bottom></BorderPane>

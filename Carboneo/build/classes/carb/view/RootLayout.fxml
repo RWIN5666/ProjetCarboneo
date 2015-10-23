@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane id="BorderPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carb.view.RootLayoutController">
+    <stylesheets>
+        <URL value="@DarkTheme.css" />
+    </stylesheets>
+<top><MenuBar BorderPane.alignment="CENTER">
+  <menus>
+    <Menu mnemonicParsing="false" text="Fichier">
+      <items>
+<MenuItem mnemonicParsing="false" text="Ouvrir" />
+<MenuItem mnemonicParsing="false" text="Enregistrer" />
+        <MenuItem mnemonicParsing="false" onAction="#handleExit" text="Quitter" />
+      </items>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Edition">
+      <items>
+        <MenuItem mnemonicParsing="false" text="Copier" />
+<MenuItem mnemonicParsing="false" text="Coller" />
+<MenuItem mnemonicParsing="false" text="Couper" />
+<MenuItem mnemonicParsing="false" text="Annuler" />
+      </items>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Aide">
+      <items>
+        <MenuItem mnemonicParsing="false" text="Aide" />
+<MenuItem mnemonicParsing="false" text="A propos" />
+      </items>
+    </Menu>
+  </menus>
+</MenuBar>
+</top>
+</BorderPane>

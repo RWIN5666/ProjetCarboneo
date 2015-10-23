@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="321.0" styleClass="background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carb.view.ProfilEditDialogController">
+  <children>
+    <GridPane prefHeight="182.0" prefWidth="301.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+      <children>
+        <Label text="Nom" GridPane.columnIndex="0" />
+        <Label text="Prenom" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <TextField fx:id="fieldNom" prefWidth="200.0" GridPane.columnIndex="1" />
+        <TextField fx:id="fieldPrenom" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" /><TextField fx:id="fieldRue" GridPane.columnIndex="1" GridPane.rowIndex="2" /><TextField fx:id="fieldVille" GridPane.columnIndex="1" GridPane.rowIndex="3" /><Label text="Rue" GridPane.rowIndex="2" /><Label text="Ville" GridPane.rowIndex="3" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints fillWidth="true" hgrow="SOMETIMES" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" />
+        <ColumnConstraints fillWidth="true" hgrow="SOMETIMES" maxWidth="231.0" minWidth="10.0" prefWidth="216.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <HBox id="HBox" alignment="CENTER" minWidth="-1.0" spacing="5.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+      <children>
+        <Button defaultButton="true" mnemonicParsing="false" onAction="#handleValider" prefWidth="100.0" text="Valider" />
+        <Button cancelButton="true" mnemonicParsing="false" onAction="#handleCancel" prefHeight="33.0" prefWidth="100.0" text="Annuler" />
+      </children>
+    </HBox>
+<VBox layoutX="27.0" layoutY="233.0" spacing="10.0">
+<children><CheckBox layoutX="43.0" layoutY="164.0" lineSpacing="10.0" mnemonicParsing="false" text="Voiture" textFill="#f2ebeb">
+<font>
+<Font size="13.0" />
+</font></CheckBox>
+<CheckBox layoutX="43.0" layoutY="192.0" lineSpacing="20.0" mnemonicParsing="false" text="Bus" textFill="#f2ebeb">
+<font>
+<Font size="13.0" />
+</font>
+</CheckBox>
+<CheckBox layoutX="43.0" layoutY="218.0" lineSpacing="10.0" mnemonicParsing="false" text="Velo" textFill="#f2ebeb">
+<font>
+<Font size="13.0" />
+</font>
+</CheckBox>
+</children>
+</VBox><Label layoutX="10.0" layoutY="200.0" text="Moyens de transport" /><TextField disable="true" layoutX="222.0" layoutY="231.0" minHeight="-Infinity" prefHeight="21.0" prefWidth="45.0" /><Text disable="true" fill="WHITE" layoutX="132.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="consommation" wrappingWidth="90.0">
+<font>
+<Font name="Segoe UI Semibold" size="13.0" />
+</font></Text><Text fill="WHITE" layoutX="267.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="L/100Km">
+<font>
+<Font name="Segoe UI Semibold" size="12.0" />
+</font></Text>
+  </children>
+  <stylesheets>
+    <URL value="@DarkTheme.css" />
+  </stylesheets>
+</AnchorPane>

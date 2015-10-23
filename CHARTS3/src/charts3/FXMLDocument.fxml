@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="charts3.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" layoutX="530.0" layoutY="79.0" onAction="#handleButtonAction" text="Appuie ici pour voir la super courbe !" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" /><PieChart fx:id="chart" layoutX="55.0" layoutY="200.0" prefHeight="313.0" prefWidth="381.0" /><LineChart fx:id="lineChart" layoutX="576.0" layoutY="185.0" prefHeight="242.0" prefWidth="307.0">
+  <xAxis>
+    <CategoryAxis side="BOTTOM" />
+  </xAxis>
+  <yAxis>
+    <NumberAxis side="LEFT" />
+  </yAxis>
+</LineChart><Label fx:id="caption" layoutX="217.5048828125" layoutY="83.0" text="Label" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Carboneo.jnlp">
+  <information>
+    <title>Carboneo</title>
+    <vendor>schafer</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="2.2+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Carboneo.jar" size="46738" download="eager" />
+    <jar href="lib/controlsfx-8.0.5.jar" size="754696" download="eager" />
+    <jar href="lib/controlsfx-samples-8.0.5.jar" size="474397" download="eager" />
+    <jar href="lib/fxsampler-1.0.5.jar" size="28863" download="eager" />
+    <jar href="lib/jaxen-1.1.6.jar" size="231882" download="eager" />
+    <jar href="lib/jdom-2.0.5-contrib.jar" size="167194" download="eager" />
+    <jar href="lib/jdom-2.0.5-javadoc.jar" size="1013679" download="eager" />
+    <jar href="lib/jdom-2.0.5-junit.jar" size="483072" download="eager" />
+    <jar href="lib/jdom-2.0.5-sources.jar" size="841559" download="eager" />
+    <jar href="lib/jdom-2.0.5.jar" size="299658" download="eager" />
+    <jar href="lib/sqlite-jdbc-3.7.2.jar" size="3201128" download="eager" />
+    <jar href="lib/xercesImpl.jar" size="1367760" download="eager" />
+    <jar href="lib/xml-apis.jar" size="220536" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Carboneo" >
+    <param name="requiredFXVersion" value="2.2+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="carb.Main"  name="Carboneo" />
+  <update check="always"/>
+</jnlp>
